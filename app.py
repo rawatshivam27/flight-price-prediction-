@@ -3,7 +3,7 @@ import joblib
 from datetime import datetime
 
 # Load the model and dictionaries (moved from Flask app)
-model = joblib.load("model.pkl")
+model = joblib.load(open('model.pkl','rb'))
 
 # Dictionaries for categorical variables
 airline_dict = {'AirAsia': 0, "Indigo": 1, "GO_FIRST": 2, "SpiceJet": 3, "Air_India": 4, "Vistara": 5}
